@@ -1,0 +1,25 @@
+def CountEven(arr):
+    Cnt = 0
+
+    for i in arr:
+        if(i % 2 == 0):
+            Cnt += 1
+        
+    return Cnt
+
+def main():
+    print("Enter the number of elements to enter: ")
+    no = int(input())
+
+    arr = []
+
+    print("Enter the elements: ")
+    for i in range(no):
+        i = int(input())
+        arr.append(i)
+
+    ans = CountEven(arr)
+    print("Even numbers in array is: ",ans)
+
+if __name__ == "__main__":
+    main()
